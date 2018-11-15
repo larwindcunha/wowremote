@@ -14,7 +14,7 @@ _italic_OK
 
 >This is for "Blockquotes".
 
-List Requires Blank line after this
+List Requires Blank line after this.
 
 * Apple
 * Orange
