@@ -10,7 +10,7 @@
 
 _italic_OK
 
-**BoldText**OK
+**BoldText** OK
 
 >This is for "Blockquotes".
 
