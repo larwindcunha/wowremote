@@ -50,4 +50,8 @@ This will create remote branch of the same name as that of local
 
 ### Pushing
 
-If any commits are done in any branch, for eg: commit 1 in master and another commit in a branch, then _git push origin master
+If any commits are done in any branch, for eg: commit 1 in master and another commit in a branch, then _git push origin master_ while in any other branch will only push the commits made in master branch..
+Any edits made in any branch wont affect pushing of changes made in master.
+
+_git push_ is respective to a particular branch as upstream branch is set.
+If want to push a branch while in another branch, given commits are made in the branch to be pushed, then _git push origin branch_ should be done. 
