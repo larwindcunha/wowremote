@@ -67,3 +67,6 @@ If want to push a branch while in another branch, given commits are made in the 
 * _git push_ can be used. But is specific to local branch because of upstream.
 
 ### 2. Git Pull
+
+* _git pull_ from any branch will pull the latest from all remote branches to all local branches. By _git pull_ all branches are updated. And this can be done from while in any branch.
+* 
