@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+# MASTER branch
+
+NEW changes
+
+NEW NEW Changes
+
+NEW NEW NEW Changes
+=======
 # 2 Ways to have git (.git) for your folder OR have git working
 
 ## OKAYAYAY
@@ -25,3 +34,4 @@ Ordered List
 1. OK
 2. OK
 3. OK
+>>>>>>> 7a6e421471ea4bb98ff4ba191431498c04768c1a
