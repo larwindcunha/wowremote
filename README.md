@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 134a0d5be6073c7b85316d13b1d46aa7db81c76c
-# MASTER branch
-
-NEW changes
-
-NEW NEW Changes
-
-NEW NEW NEW Changes
-<<<<<<< HEAD
-=======
 # 2 Ways to have git (.git) for your folder OR have git working
 
 ## OKAYAYAY
@@ -38,6 +25,3 @@ Ordered List
 1. OK
 2. OK
 3. OK
->>>>>>> 7a6e421471ea4bb98ff4ba191431498c04768c1a
-=======
->>>>>>> 134a0d5be6073c7b85316d13b1d46aa7db81c76c
