@@ -35,23 +35,23 @@ After that from that branch git push is enough. It will know which branch to pus
 * _git checkout -b branch-name-new_ will create and enter the new branch branch-name
 * _git checkout branch-name_ will enter that branch branch-name
 
-### Git push
+### 1. Git push
 
 **_git push_ does git push origin master for that particular branch only** and this is done so that we do not need to _git push origin branch-name_ while in same branch with upstream.
 But when in different branch and want to push, need to use full command _git push origin branch-name_ and this will only push (while in other branch) if commits are made in branchname branch.
 
-### If local branch local-now is there and want to push and create branch of diff name on remote then
+#### If local branch local-now is there and want to push and create branch of diff name on remote then
 
 * _git push remote-origin localnow:new-branch_
 
-### If local branch local-branch is there and want to push to remote but branch is not there then
+#### If local branch local-branch is there and want to push to remote but branch is not there then
 
 * _git push origin localnow_
 
 This will create remote branch of the same name as that of local branch.
 Then _git push -u origin local-now_ will set upstream to it and _git push would be enough.
 
-### Pushing
+#### Pushing
 
 If any commits are done in any branch, for eg: commit 1 in master and another commit in a branch, then _git push origin master_ while in any other branch will only push the commits made in master branch..
 Any edits made in any branch wont affect pushing of changes made in master.
@@ -66,3 +66,4 @@ If want to push a branch while in another branch, given commits are made in the 
 * _git push -u origin branch-name_ is used to set upstream branch so _git push_ can be used. If branch doesn't exist in remote, then -u can be used in first push as well. **Note: Once upstream is set, _git push_ will be for the current working branch. It is specific to local branch. Upstream is for local branch to understand where to push in remote when just using _git push_**
 * _git push_ can be used. But is specific to local branch because of upstream.
 
+### 2. Git Pull
