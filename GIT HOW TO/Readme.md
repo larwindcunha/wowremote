@@ -48,3 +48,6 @@ _git push_ does git push origin master from that particular branch
 
 This will create remote branch of the same name as that of local
 
+### Pushing
+
+If any commits are done in any branch, for eg: commit 1 in master and another commit in a branch, then _git push origin master
