@@ -34,13 +34,17 @@ After that from that branch git push is enough. It will know which branch to pus
 * _git checkout branch-name_ will enter that branch branch-name
 * _git checkout -b branch-name-new_ will create and enter the new branch branch-name
 
-### If local branch _local-now_ is there and want to create branch of same name on remote then
-
-_git push remote-origin localnow:localnow_
-OR
-_git push origin localnow:new-branch_
-
 ### Git push
 
 _git push_ does git push origin master from that particular branch
-_
+
+### If local branch local-now is there and want to push and create branch of diff name on remote then
+
+* _git push remote-origin localnow:new-branch_
+
+### If local branch local-branch is there and want to push to remote but branch is not there then
+
+* _git push origin localnow_
+
+This will create remote branch of the same name as that of local
+
