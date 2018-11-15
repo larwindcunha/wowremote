@@ -31,12 +31,14 @@ After that from that branch git push is enough. It will know which branch to pus
 
 ## Using GIT
 
-* _git checkout branch-name_ will enter that branch branch-name
+* _git branch branch-name_ will create a branch of the current working branch and will have all it's files
 * _git checkout -b branch-name-new_ will create and enter the new branch branch-name
+* _git checkout branch-name_ will enter that branch branch-name
 
 ### Git push
 
-_git push_ does git push origin master from that particular branch
+**_git push_ does git push origin master for that particular branch only** and this is done so that we do not need to _git push origin branch-name_ while in same branch with upstream.
+But when in different branch and want to push, need to use full command _git push origin branch-name_ and this will only push (while in other branch) if commits are made in branchname branch.
 
 ### If local branch local-now is there and want to push and create branch of diff name on remote then
 
@@ -46,7 +48,8 @@ _git push_ does git push origin master from that particular branch
 
 * _git push origin localnow_
 
-This will create remote branch of the same name as that of local
+This will create remote branch of the same name as that of local branch.
+Then _git push -u origin local-now_ will set upstream to it and _git push would be enough.
 
 ### Pushing
 
@@ -54,4 +57,12 @@ If any commits are done in any branch, for eg: commit 1 in master and another co
 Any edits made in any branch wont affect pushing of changes made in master.
 
 _git push_ is respective to a particular branch as upstream branch is set.
-If want to push a branch while in another branch, given commits are made in the branch to be pushed, then _git push origin branch_ should be done. 
+If want to push a branch while in another branch, given commits are made in the branch to be pushed, then _git push origin branch_ should be done.
+
+**To sum up pushing**:
+
+* _git push origin branch-name_ will push _branch-name_ branch from any branch if commits are made in _branch-name_ branch.
+* If remote branch _branch-name_ is not present or created, then _git push origin branch-name_ will automatically create branch _branch-name_.
+* _git push -u origin branch-name_ is used to set upstream branch so _git push_ can be used. If branch doesn't exist in remote, then -u can be used in first push as well. **Note: Once upstream is set, _git push_ will be for the current working branch. It is specific to local branch. Upstream is for local branch to understand where to push in remote when just using _git push_**
+* _git push_ can be used. But is specific to local branch because of upstream.
+
