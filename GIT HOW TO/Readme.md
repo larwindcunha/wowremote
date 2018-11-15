@@ -68,5 +68,7 @@ If want to push a branch while in another branch, given commits are made in the 
 
 ### 2. Git Pull
 
-* _git pull_ from any branch will pull the latest from all remote branches to all local branches. By _git pull_ all branches are updated. And this can be done from while in any branch. 
-* _git pull origin branch-name_  
+* _git pull_ from any branch will pull the latest from all remote branches to all local branches. It will _git fetch_ and _git-merge_. By _git pull_ all branches are updated(i.e, all remote branches are fetched and merged with their respective local banches). And this can be done from while in any branch. 
+* _git pull origin branch-name_ will pull the files from remote branch _branch-name_ to your current working local branch. **It will overwrite. Make sure your are pulling correct remote to correct local.** 
+* _git pull origin branch-name_ won't update local branch _branch-name_. It will pull and overwrite to current local.
+* Either do _git pull_ from any branch without specifying any branch from remote, or pull the correct remote to correct local. For eg: If checked into branch _branch-name_ then do _git pull origin branch-name_
