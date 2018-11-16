@@ -1,8 +1,8 @@
-# 2 Ways to have git (.git) for your folder OR have git working
+# Header level 1
 
-## OKAYAYAY
+## Header level 2
 
-### OKAY
+### Header level 3
 
 ![ImageLink](https://octodex.github.com/images/bannekat.png)
 
